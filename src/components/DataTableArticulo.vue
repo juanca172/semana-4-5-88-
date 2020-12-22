@@ -159,10 +159,14 @@
         @click="deleteItem(item)"
       >
       <template v-if = "item.estado">
+
         mdi-toggle-switch
+
       </template>
       <template v-else>
+
         mdi-toggle-switch-off-outline
+        
       </template>
 
       </v-icon>
@@ -214,9 +218,9 @@
         descripcion: "" ,
         estado: 0,
         codigo:"",
-        categorium:{
-          id:0,
+        Categorium:{
           nombre:"",
+          id:0,
         }
               
       },
@@ -226,7 +230,7 @@
         descripcion: "" ,
         estado: 0,
         codigo:"",
-        categorium:{
+        Categorium:{
           id:0,
           nombre:""
         }
@@ -324,6 +328,7 @@
         this.$nextTick(() => {
           this.editedItem = Object.assign({}, this.defaultItem)
           this.editedIndex = -1
+          this.Categorium = ""
         })
       },
       closeDelete () {
@@ -358,7 +363,10 @@
             "id": this.editedItem.id,
            "nombre": this.editedItem.nombre, 
           "descripcion" : this.editedItem.descripcion, 
-          "estado" : 1  })
+          "estado" : 1,
+          "codigo" : this.editedItem.codigo,
+          "categoriaId":this.Categorium.id
+  })
 
           .then(response =>{
               this.list()
