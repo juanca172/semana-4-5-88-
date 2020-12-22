@@ -68,8 +68,8 @@
                     
                   >
                     <v-select
-                      v-model="categorium"
-                      label="Nombrecategoria"
+                      v-model="Categorium"
+                      label="categoria"
                       :items="categorias"
                       item-text="nombre"
                       item-value="id"
@@ -159,10 +159,14 @@
         @click="deleteItem(item)"
       >
       <template v-if = "item.estado">
+
         mdi-toggle-switch
+
       </template>
       <template v-else>
+
         mdi-toggle-switch-off-outline
+        
       </template>
 
       </v-icon>
@@ -197,7 +201,7 @@ import axios from "axios"
           sortable: true,
           value: 'nombre',
         },
-        { text: 'Categoria', value: 'categorium.nombre' },
+        { text: 'Categoria', value: 'Categorium.nombre' },
         { text: 'Descripcion', value: 'descripcion' },
         { text: 'Estado', value: 'estado' },
         { text: 'Codigo', value: 'codigo' },
@@ -205,7 +209,7 @@ import axios from "axios"
       ],
       articulos:[],
       categorias:[],
-      categorium:"",
+      Categorium:"",
       editedIndex: -1,
 
 
@@ -215,9 +219,9 @@ import axios from "axios"
         descripcion: "" ,
         estado: 0,
         codigo:"",
-        categorium:{
-          id:0,
+        Categorium:{
           nombre:"",
+          id:0,
         }
               
       },
@@ -227,7 +231,7 @@ import axios from "axios"
         descripcion: "" ,
         estado: 0,
         codigo:"",
-        categorium:{
+        Categorium:{
           id:0,
           nombre:""
         }
@@ -325,6 +329,7 @@ import axios from "axios"
         this.$nextTick(() => {
           this.editedItem = Object.assign({}, this.defaultItem)
           this.editedIndex = -1
+          this.Categorium = ""
         })
       },
       closeDelete () {
@@ -359,7 +364,10 @@ import axios from "axios"
             "id": this.editedItem.id,
            "nombre": this.editedItem.nombre, 
           "descripcion" : this.editedItem.descripcion, 
-          "estado" : 1  })
+          "estado" : 1,
+          "codigo" : this.editedItem.codigo,
+          "categoriaId":this.Categorium.id
+  })
 
           .then(response =>{
               this.list()
