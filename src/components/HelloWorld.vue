@@ -133,7 +133,8 @@
               <br><br> </h2>
             <div class="row row-grid veutify-content-center">
               <div class="col-lg-4 veutify-content-center ">
-                <v-card class="d-flex flex-column justify-space-between align-center" hover shadow body-classes="py-5">
+                <v-card color="fff9f9" class="d-flex flex-column justify-space-between align-center" hover shadow body-classes="py-5">
+                  <br>
                   <v-img
                     width="120"
                     height="120"
@@ -156,6 +157,7 @@
               </div>
               <div class="col-lg-4">
                 <v-card class="border-20 d-flex flex-column justify-space-between align-center" hover shadow body-classes="py-5">
+                  <br>
                   <v-img
                     width="120"
                     height="120"
@@ -175,6 +177,7 @@
               </div>
               <div class="col-lg-4">
                 <v-card class="border-100 d-flex flex-column justify-space-between align-center" hover shadow body-classes="py-5">
+                  <br>
                   <v-img
                     width="140"
                     height="120"

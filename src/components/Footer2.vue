@@ -11,32 +11,37 @@
         <v-col
           
         >
-          <v-card color="#6aaaff" 
+          <v-card color="#9E9E9E" 
            
             outlined
             tile
             text-center
             align-sm-content-space-around
+            
           
 
           >
+          <p class="text-white">
             SERVICIO AL CLIENTE <br>
             Horario de atención online:<br>
             Lunes a Domingo de 10a.m a 8p.m<br>
             Celular: (+571) 3143306000 <br>
             Email: market88_contacto@market88.co <br>
             Email: market88_soporte@market88.co <br><br><br><br>
+            </p>
+            
           </v-card>
           
         </v-col>
         <v-col
           
         >
-          <v-card color="#6aaaff" 
+          <v-card color="#9E9E9E" 
            
             outlined
             tile
             text-left
+            
           >
             NUESTRAS TIENDAS <br>
             SEDE PRINCIPAL <br>

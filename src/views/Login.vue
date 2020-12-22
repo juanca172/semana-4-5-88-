@@ -26,7 +26,6 @@
                       id="email"
                       class="form-control mb-5"
                       v-model="login.email"
-                      :rules="emailRules"
                       placeholder="Email"
                       required
                     ></v-text-field>
@@ -38,8 +37,7 @@
                       class="form-control mb-5"
                       placeholder="Contraseña"
                       v-model="login.password"
-                      :counter="10"
-                      :rules="nameRules"
+                      :counter="20"
                       required
                     ></v-text-field>
                     <!-- inicio sesion button -->

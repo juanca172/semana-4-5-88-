@@ -33,7 +33,7 @@
             return {
                     items: [
                         {
-                            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rWddYdIyu5EBOLYOlb3K_cW90LdT122FHQ&usqp=CAU",
+                            src: "https://static.iris.net.co/dinero/upload/images/2019/9/3/276314_1.jpg",
                         },
                         {
                             src: 'https://agenciadigitalamd.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/10/marketing-automation-agencia-digital-ID.jpg.webp',
@@ -43,6 +43,9 @@
                         },
                         {
                             src: 'https://www.esic.edu/sites/default/files/rethink/89a8a7b6-screenshot-2018-01-24-at-12.36.53.png',
+                        },
+                        {
+                            src: 'https://s3.amazonaws.com/mentoring.redesign/s3fs-public/styles/aspect_ratio__4_3/public/marketing-plan_1.jpg',
                         },
                     ],
             }

@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    color="primary lighten-1"
+    color="#6f6d6d"
     padless
   >
     <v-row
@@ -14,12 +14,14 @@
         text
         rounded
         class="my-2"
+        href="https://github.com/juanca172/semana-4-5-88-"
       >
         {{ link }}
       </v-btn>
       <v-col
-        class="primary lighten-2 py-4 text-center white--text"
+        class="#6f6d6d py-4 text-center white--text"
         cols="12"
+        
       >
         {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
       </v-col>
@@ -31,7 +33,7 @@
   export default {
     data: () => ({
       links: [
-        'Home',
+        'Github',
       
       ],
     }),
