@@ -301,7 +301,7 @@ export default {
           })
 
           .then((response) => {
-            this.list();
+            this.listArticulos();
           })
           .catch((error) => {
             return error;
