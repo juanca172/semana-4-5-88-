@@ -1,5 +1,5 @@
 <template>
-    <div container background="dark">
+    <div container>
         <app-header> </app-header>
         <div class="position-relative">
              <!-- shape Hero -->
@@ -24,8 +24,8 @@
             <div class="container pt-lg pb-100">
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-10">
-                        <h2 p class="lead text-dark text-center">Nuestro compromiso está en brindar soluciones efectivas a nuestros clientes por medio
-                           de productos eficaces y eficientes.</h2>
+                        <h3 p class="lead text-dark text-center">Nuestro compromiso está en brindar soluciones efectivas a nuestros clientes por medio
+                           de productos eficaces y eficientes.</h3>
                     </div>
                 </div>
                 <div class="row row-grid mt-5">
@@ -123,8 +123,8 @@
                                     <small class="h6 text-muted">Web Developer</small>
                                 </h5>
                                 <div class="mt-3">
-                                    <base-button tag="a" href="#" type="warning" icon="fa fa-google" rounded
-                                                 icon-only></base-button>
+                                    <v-base-button tag="a" href="#" type="warning" icon="fa fa-google" rounded
+                                                 icon-only></v-base-button>
                                 </div>
                             </div>
                         </div>
@@ -140,8 +140,8 @@
                                     <small class="h6 text-muted">Web Designer</small>
                                 </h5>
                                 <div class="mt-3">
-                                    <base-button tag="a" href="https://www.google.com/intl/es-419/gmail/about/" type="primary" icon="fa fa-google" rounded
-                                                 icon-only></base-button>
+                                    <v-base-button tag="a" href="https://www.google.com/intl/es-419/gmail/about/" type="primary" icon="fa fa-google" rounded
+                                                 icon-only></v-base-button>
                                 </div>
                             </div>
                         </div>
@@ -183,8 +183,9 @@
                 </div>
             </div>
             
-           
+       
         </v-section>
+         <footer-2></footer-2>   
         <div class="container shape-container d-flex">
                     <div class="col px-0">
                         <app-footer></app-footer>
@@ -205,6 +206,7 @@ import AppHeader from './AppHeader.vue';
 import VueJwtDecode from "vue-jwt-decode";
 import Carousel from './Carousel.vue';
 import AppFooter from './AppFooter.vue';
+import Footer2 from './Footer2.vue';
  import Vuetify from 'vuetify'
     import 'vuetify/dist/vuetify.min.css'
 
@@ -213,6 +215,7 @@ export default {
     AppHeader,
     Carousel,
     AppFooter,
+    Footer2,
    },
   data() {
     return {
