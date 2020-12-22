@@ -4,7 +4,8 @@
 <script>
 import DataTableArticulo from '../components/DataTableArticulo.vue'
 export default {
-  components: { DataTableArticulo 
+  components: { 
+    DataTableArticulo 
   },
     
 }
