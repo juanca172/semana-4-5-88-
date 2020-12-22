@@ -1,7 +1,7 @@
 <template>
    <div class="container">
-    <div class="header">
-      <div class="container-menu">
+    <div class="header red">
+      <div class="container-menu ">
         <v-navbar>
              <v-tabs>
     <v-tab><a href="#" class="main-menu__link">Inicio</a></v-tab>

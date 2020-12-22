@@ -3,30 +3,22 @@ import Vuetify from 'vuetify/lib/framework';
 import es from 'vuetify/lib/locale/es';
 import '@mdi/font/css/materialdesignicons.css'
 
+import colors from 'vuetify/lib/util/colors'
+
 Vue.use(Vuetify);
 
+
+
 export default new Vuetify({
-  theme: {
-      options: {
-        customProperties: true,
-      },
-    themes: {
-      light: {
-        primary: '#ee44aa',
-        secondary: '#424242',
-        accent: '#82B1FF',
-        error: '#FF5252',
-        info: '#2196F3',
-        success: '#4CAF50',
-        warning: '#FFC107'
-      },
+  
+    theme: { 
+    ligth: {
+      primary: colors.red.lighten3,
+      
+      
     },
-  },
-    lang: {
-      locales: { es },
-      current: 'es',
-    },
-  icons: {
-    iconfont: 'md',
-  },
-});
+  }
+  })
+
+
+  

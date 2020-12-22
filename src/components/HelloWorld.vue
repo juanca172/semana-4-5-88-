@@ -20,12 +20,12 @@
       class="section section-shaped my-0 overflow-hidden"
       id="services"
     >
-      <div class="container pt-lg pb-100">
-        <div class="row text-center justify-content-center">
-          <div class="col-lg-10">
+      <div class="container pt-lg pb-100 text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-15">
             <h2 p class="lead text-dark text-center">
-              Nuestro compromiso está en brindar soluciones efectivas a nuestros
-              clientes por medio de productos eficaces y eficientes.
+                  <br>   Nuestro compromiso está en brindar soluciones efectivas a nuestros
+              clientes por medio de productos eficaces y eficientes. <br><br>
             </h2>
           </div>
         </div>
@@ -38,7 +38,7 @@
             <h2 class="text-dark mt-3 text-center">
               Marketing con influencers
             </h2>
-            <p class="text-white mt-3">
+            <p class="text-white mt-3 text-justify">
               El marketing de influencers es una novedosa estrategia de
               marketing que consiste en lograr una serie de vínculos de
               colaboración entre las marcas y las empresas y aquellas personas
@@ -52,7 +52,7 @@
             >
             </v-img>
             <h2 class="text-white mt-3 text-center">Inteligencia Artificial</h2>
-            <p class="text-white mt-3">
+            <p class="text-white mt-3 text-justify">
               La IA puede analizar el comportamiento del consumidor y los
               patrones de búsqueda, utilizar datos de plataformas de redes
               sociales y publicaciones de blog para ayudar a las empresas a
@@ -65,7 +65,7 @@
             >
             </v-img>
             <h2 class="text-white mt-3 text-center">Video Marketing</h2>
-            <p class="text-white mt-3">
+            <p class="text-white mt-3 text-justify">
               Según el informe de Mondo: The mondo Creative & Digital Trends, el
               video marketing seguirá siendo la estrategia preferida de
               marketing digital para el 2019 y 2020. La encuesta, realizada a
@@ -120,7 +120,6 @@
             </v-container>
           </v-item-group>
         </div>
-        ustify-content-center
       </div>
     </v-section>
     <v-section class="section-shaped my-0" id="news">
@@ -128,14 +127,13 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12 ustify-content-center">
-            <h5 p class="description mt-3 text-center">
-              "Trabajamos en pro de satisfacer cada una de las necesidades de
-              nuestros clientes, lo que piensan de nosotros algunos clientes."
-              <br />
-            </h5>
+            <h2 p class="description mt-3 text-center">
+              Trabajamos en pro de satisfacer cada una de las necesidades de
+              nuestros clientes, lo que piensan de nosotros algunos clientes.
+              <br><br> </h2>
             <div class="row row-grid veutify-content-center">
-              <div class="col-lg-4 veutify-content-center">
-                <v-card class="border-6" hover shadow body-classes="py-5">
+              <div class="col-lg-4 veutify-content-center ">
+                <v-card class="d-flex flex-column justify-space-between align-center" hover shadow body-classes="py-5">
                   <v-img
                     width="120"
                     height="120"
@@ -145,18 +143,19 @@
                     type="primary"
                     rounded
                     class="mb-4"
+                    
+                    
                   >
                   </v-img>
-                  <h6 class="text-primary text-uppercase">Margareth - Claro</h6>
-                  <p class="description mt-3">
+                  <h4 class="text-primary text-uppercase text-center">Margareth - Claro</h4>
+                  <p class="description mt-3 text-center">
                     "Hemos encontrado en market88 un aliado para crecer en redes
-                    y y así aumentar nuestras ventas. Excelente servicio."
-                    <br />
+                    y y así aumentar nuestras ventas. Excelente servicio."<br><br><br>
                   </p>
                 </v-card>
               </div>
               <div class="col-lg-4">
-                <v-card class="border-0" hover shadow body-classes="py-5">
+                <v-card class="border-20 d-flex flex-column justify-space-between align-center" hover shadow body-classes="py-5">
                   <v-img
                     width="120"
                     height="120"
@@ -166,16 +165,16 @@
                     class="mb-4"
                   >
                   </v-img>
-                  <h6 class="text-success text-uppercase">Omar - Netflix</h6>
-                  <p class="description mt-3">
+                  <h4 class="text-success text-uppercase text-center">Omar - Netflix</h4>
+                  <p class="description mt-3 text-center">
                     "Trabajar de la mano de tan excelentes profesionales, es
                     gratificante. Excelente servicio y calidad humana de todos
-                    sus colaboradores"<br />
+                    sus colaboradores"<br><br><br>
                   </p>
                 </v-card>
               </div>
               <div class="col-lg-4">
-                <v-card class="border-0" hover shadow body-classes="py-5">
+                <v-card class="border-100 d-flex flex-column justify-space-between align-center" hover shadow body-classes="py-5">
                   <v-img
                     width="140"
                     height="120"
@@ -185,11 +184,11 @@
                     class="mb-4"
                   >
                   </v-img>
-                  <h6 class="text-warning text-uppercase">Liliam - Ramo</h6>
-                  <p class="description mt-3">
+                  <h4 class="text-warning text-uppercase text-center">Liliam - Ramo</h4>
+                  <p class="description mt-3 text-center">
                     "Desde que empezamos a trabajar con Market88 nuestro
                     posicionamiento en redes ha crecido en un 100% y las ventas
-                    asesoradas han aumentado un 125%."<br />
+                    asesoradas han aumentado un 125%."<br><br>
                   </p>
                 </v-card>
               </div>
@@ -201,12 +200,12 @@
     <v-section class="section section-lg text-center" id="team">
       <div class="container">
         <div class="row justify-content-center text-center mb-lg">
-          <div class="col-lg-8">
-            <h2 class="display-3 text-center">El equipo de trabajo</h2>
-            <p class="lead text-muted text-center">
+          <div class="col-lg-12"><br>
+            <h3 class="display-3 text-center">Nuestro equipo de trabajo</h3>
+            <h3 p class="lead text-muted text-center">
               Este es nuestro gran equipo de trabajo, reunimos los mejores para
               ofrecer lo mejor a nuestros clientes.
-            </p>
+            </h3>
           </div>
         </div>
         <div class="row">
@@ -312,6 +311,7 @@
           </div>
         </div>
       </div>
+    <footer2></footer2>
     </v-section>
     <div class="container shape-container d-flex">
       <div class="col px-0">
@@ -329,6 +329,7 @@ import AppHeader from "./AppHeader.vue";
 import VueJwtDecode from "vue-jwt-decode";
 import Carousel from "./Carousel.vue";
 import AppFooter from "./AppFooter.vue";
+import Footer2 from "./Footer2.vue";
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css";
 export default {
@@ -336,6 +337,7 @@ export default {
     AppHeader,
     Carousel,
     AppFooter,
+    Footer2,
   },
   data() {
     return {
