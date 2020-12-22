@@ -124,6 +124,7 @@ export default {
       ],
       cruds: [
         ['Usuario', 'mdi-account-outline', 'Usuario'],
+        ['login', 'mdi-account-outline', 'Login']
         
       ],
         }),

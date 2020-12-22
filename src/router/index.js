@@ -11,36 +11,41 @@ const routes = [
     component: Home
   },
   {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue')
+  },
+  {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue'),
+    meta: {
+      requiresAuth: true
+    }
   },
   {
-    path: '/Categoria',
+    path: '/categoria',
     name: 'Categoria',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "Categoria" */ '../views/Categoria.vue')
+    component: () => import(/* webpackChunkName: "Categoria" */ '../views/Categoria.vue'),
+    meta: {
+      requiresAuth: true
+    }
   },
   {
-    path: '/Articulo',
+    path: '/articulo',
     name: 'Articulo',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "Articulo" */ '../views/Articulo.vue')
+    component: () => import(/* webpackChunkName: "Articulo" */ '../views/Articulo.vue'),
+    meta: {
+      requiresAuth: true
+    }
   },
   {
-    path: '/Usuario',
+    path: '/usuario',
     name: 'Usuario',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "Usuario" */ '../views/Usuario.vue')
+    component: () => import(/* webpackChunkName: "Usuario" */ '../views/Usuario.vue'),
+    meta: {
+      requiresAuth: true
+    }
   }
 ]
 
@@ -49,5 +54,19 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    if (!localStorage.getItem("accessToken")) {
+      next({
+        path: "/"
+      });
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+});
 
 export default router

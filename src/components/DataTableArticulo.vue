@@ -68,7 +68,7 @@
                     
                   >
                     <v-select
-                      v-model="categorium"
+                      v-model="editedItem.categorium.nombre"
                       label="Nombrecategoria"
                       :items="categorias"
                       item-text="nombre"
@@ -181,7 +181,6 @@
   </v-data-table>
 </template>
 <script>
-import axios from "axios"
   export default {
     data: () => ({
       dialog: false,
@@ -197,7 +196,7 @@ import axios from "axios"
           sortable: true,
           value: 'nombre',
         },
-        { text: 'Categoria', value: 'categorium.nombre' },
+        { text: 'Categoria', value: 'Categorium.nombre' },
         { text: 'Descripcion', value: 'descripcion' },
         { text: 'Estado', value: 'estado' },
         { text: 'Codigo', value: 'codigo' },
@@ -205,7 +204,7 @@ import axios from "axios"
       ],
       articulos:[],
       categorias:[],
-      categorium:"",
+      categorium:{},
       editedIndex: -1,
 
 
@@ -256,7 +255,7 @@ import axios from "axios"
     },
     methods: {
       listArticulos(){
-          axios.get("http://localhost:3000/api/Articulo/list")
+          this.$http.get("/api/Articulo/list")
           .then(response =>{
               this.articulos = response.data;
               this.cargando = false;
@@ -268,7 +267,7 @@ import axios from "axios"
           })
       },
       listCat(){
-          axios.get("http://localhost:3000/api/categoria/list")
+          this.$http.get("/api/categoria/list")
           .then(response =>{
               this.categorias = response.data;
 
@@ -292,7 +291,7 @@ import axios from "axios"
       },
       deleteItemConfirm () {
         if (this.editedItem.estado === 1) {
-          axios.put("http://localhost:3000/api/Articulo/deactivate",{
+          this.$http.put("/api/Articulo/deactivate",{
             "id": this.editedItem.id,
            
           })
@@ -307,7 +306,7 @@ import axios from "axios"
           
           
         } else {
-          axios.put("http://localhost:3000/api/Articulo/activate",{
+          this.$http.put("/api/Articulo/activate",{
             "id": this.editedItem.id,
               })
           .then(response =>{
@@ -336,7 +335,7 @@ import axios from "axios"
       },
       save () {
         if (this.editedIndex > -1) {
-          axios.put("http://localhost:3000/api/Articulo/update",{
+          this.$http.put("/api/Articulo/update",{
             "id": this.editedItem.id,
            "nombre": this.editedItem.nombre, 
           "descripcion" : this.editedItem.descripcion,
@@ -354,7 +353,7 @@ import axios from "axios"
           
           
         } else {
-          axios.post("http://localhost:3000/api/Articulo/add",{
+          this.$http.post("/api/Articulo/add",{
                 
             "id": this.editedItem.id,
            "nombre": this.editedItem.nombre, 
